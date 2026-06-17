@@ -1,19 +1,51 @@
-This is a requirements md ( mark down) file
+Readme
 
-This md file will be a walkthrough or documentation for any user who is going to use this application or going to use this framework
+This Framework is for Automation of QA 
 
-3 sections:
+Where to get the repro:
+Clone this repo: https://github.com/VinMcQueen95/EntFramework.git
 
-1) Overview: Tells about high level of project overview
+To run the test: 1 test is currently added: loginTest.spec.ts: that checks if we are able to login using a valid username and password and clicking teh Login button on: saucedemo.com, that provides a site for checking automation scripts on this site. This is to exercise the setup of the framework from scratch and talking the free saucedemo site to run a few tests successfully 
 
-2) Features: tells about what will be used like : page object model, data driven testing etc.. retry mechanism, cross browser testing
+Next step is to have the site to be sofytest / pentest environments so that these sites can be tested qwith test scenarios
 
-3) Sample test cases: Test scenarios for sample.. using the sample application
+Summary: Implemented:
+TypeScript-based Playwright framework
+Structured project layout
+Page Object Model: For LoginPage and HomePage
+Screenshot capture on test failure
+Framework documentation
 
-sample appplication: 
+Future enhancemnents:
+HTML reporting
+Externalized test data
+Environment-based configuration
+Logging support
+Test tagging
+Parallel execution optimization
+Retry mechanisms
+CI/CD integration
+Advanced fixtures and utilities
 
-like example:
-developer.salesforce.com/signup
+Folder structure:
+project-root/
+
+├── pages/
+├── tests/
+├── data/
+├── config/
+├── playwright.config.ts
+├── package.json
+└── README.md
 
 
-
+pages: supports the Page object model and every page has a corresponding file and all reusable utilities corresponding to that page are saved and maintained in that page
+tests: contains the test spec files: test.spec.ts
+data: the data used to run the same test with multiple sets of data
+Config: The configuration settings for say the env to be used etc will saved in this
+playwrigght.config.ts: the settings and configurations for the playwright 
+package.json: lists all the packages installed and available as part of this framework
+README.md : explains the basic overview and how to use this framework
+api: for api testing
+reporting: The test reports
+test-results: the results from a test run are captured
