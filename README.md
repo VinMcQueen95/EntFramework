@@ -18,7 +18,7 @@ Summary: Implemented:
 
 Future enhancemnents:
 1) HTML reporting
-2) Externalized test data
+2) Externalized test data and also data encryption
 3) Environment-based configuration
 4) Logging support
 5) Test tagging
@@ -64,3 +64,6 @@ api: for api testing
 reporting: The test reports
 
 test-results: the results from a test run are captured
+
+
+Additional considerations and notes when creating a Framework for Automated testing: https://docs.google.com/document/d/1x5yubd8ZwHw51lhC_bRfaVwjaA1Ljz_1j8uURigjrZI/edit?usp=sharing
