@@ -4,9 +4,14 @@
 
 import {test} from "@playwright/test";
 import LoginPage from "../pages/LoginPage";
-//import cdata from "../data/logins.json"
+import ldata from "../data/logins.json"
+
+for (const login of ldata){
+    
 
 
+
+}
 
 test("test", async ({page}) => {
    const loginPage = new LoginPage(page);
