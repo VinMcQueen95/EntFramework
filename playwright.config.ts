@@ -40,7 +40,8 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    baseURL: "https://www.saucedemo.com/",
+    //baseURL: "https://www.saucedemo.com/",
+    baseURL: "https://login.bfnow.hclsofy.dev/",
     screenshot:'on',
     video: 'retain-on-first-failure',
     trace: 'on-first-retry',
