@@ -11,8 +11,9 @@ test("test", async ({page}) => {
 
 
    await loginPage.navigateToLoginPage();
-   await loginPage.fillUserName("standard_user")
-   await loginPage.fillPassword("secret_sauce")
+
+    await loginPage.fillUserName("cocoabeachfl007@yopmail.com")
+   await loginPage.fillPassword("Bigfix123!Bigfix123!")
 
    const homePage= await loginPage.clickLoginButton();
    await homePage.expectHomeTitleToBeVisible();
