@@ -26,6 +26,7 @@ async fillUserName(username: string){
 
 async fillPassword(password:string){
    await this.page.getByRole('textbox', { name: 'Password' }).fill(password);
+   console.log("password value filled");
 
 
 }
