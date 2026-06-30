@@ -34,7 +34,7 @@ async clickLoginButton(){
    await this.page.getByRole('button', { name: 'Log in' })
    .click()
    .catch((error) => {
-       console.error('Error clicking login button: $(error)'); 
+       console.error('Error clicking login button and faced an error: $(error)'); 
        throw error; 
    });
 
