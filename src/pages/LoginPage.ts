@@ -25,6 +25,7 @@ async fillUserName(username: string){
 
 async fillPassword(password:string){
    await this.page.getByRole('textbox', { name: 'Password' }).fill(password);
+   console.log("password value filled");
 
 
 }
@@ -34,7 +35,8 @@ async clickLoginButton(){
    await this.page.getByRole('button', { name: 'Log in' })
    .click()
    .catch((error) => {
-       console.error('Error message occured when clicking login button and faced an error: $(error)'); 
+      console.error('Error clicking login button and faced an error: $(error)'); 
+      
        throw error; 
    });
 
