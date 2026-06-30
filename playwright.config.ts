@@ -27,7 +27,7 @@ export default defineConfig({
   use: {
     baseURL: "https://login.bfnow.hclsofy.dev/",
     screenshot:'on',
-    video: 'retain-on-first-failure',
+    video: 'on',
     trace: 'on-first-retry',
   },
 
