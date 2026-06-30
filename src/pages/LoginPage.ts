@@ -19,6 +19,7 @@ async navigateToLoginPage(){
 
 async fillUserName(username: string){
    await this.page.getByRole('textbox', { name: 'Login Name' }).fill(username);
+   console.log("Login name value filled");
 
 }
 
@@ -35,8 +36,7 @@ async clickLoginButton(){
    await this.page.getByRole('button', { name: 'Log in' })
    .click()
    .catch((error) => {
-      console.error('Error clicking login button and faced an error: $(error)'); 
-      
+       console.error('Error clicking login button and faced an error and outputting the error: $(error)'); 
        throw error; 
    });
 
