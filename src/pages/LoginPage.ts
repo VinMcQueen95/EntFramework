@@ -19,6 +19,7 @@ async navigateToLoginPage(){
 
 async fillUserName(username: string){
    await this.page.getByRole('textbox', { name: 'Login Name' }).fill(username);
+   console.log("Login name value filled");
 
 }
 
